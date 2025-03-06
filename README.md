@@ -1,31 +1,18 @@
-# gpu/GainLib
+# Gain Processor Client Library
+This project illustrates how to write a simple client library for
+a GPU processor. The client library takes care of loading the GPU Audio
+engine and the gain processor and offers a lightweight interface to process
+audio data either synchronously or asynchronuosly with double buffering.
 
+## GainInterface
+Interface for the client library and public include for projects using the library.
 
+## GPUCreate
+Function to create an instance of the client library, i.e., GPUGainProcessor.
 
-## Getting Started
+## GPUGainProcessor
+Actual implementation of the GainInterface.
 
-Download links:
-
-SSH clone URL: ssh://git@git.jetbrains.space/gpu-audio/gpu/GainLib.git
-
-HTTPS clone URL: https://git.jetbrains.space/gpu-audio/gpu/GainLib.git
-
-
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-## Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Examples
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a production system.
-
-## Resources
-
-Add links to external resources for this project, such as CI server, bug tracker, etc.
+# GPUGainProcessorTests
+Unit tests to check correctness of processor and library and to illustrate how to use the
+library to process data.
