@@ -8,8 +8,7 @@ cmake_policy(SET CMP0135 NEW)
 # ENGINE API
 FetchContent_Declare(
     engine_api
-    URL https://packages.braingines.com/artifactory/partners/common/engine_api_unstable/engine_api-v2.2.0_62.zip
-    HTTP_HEADER "Authorization: Bearer $ENV{GPUAUDIO_ART_KEY}"
+    URL https://github.com/gpuaudio/platform_headers/releases/download/v0.0.1/engine_api-v2.2.0_63.zip
     SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include/engine_api
 )
 FetchContent_MakeAvailable(engine_api)
@@ -17,8 +16,7 @@ FetchContent_MakeAvailable(engine_api)
 # GPU AUDIO CLIENT
 FetchContent_Declare(
     gpu_audio_client
-    URL https://packages.braingines.com/artifactory/partners/common/gpu_audio_client_unstable/gpu_audio_client-v0.1.1_12.zip
-    HTTP_HEADER "Authorization: Bearer $ENV{GPUAUDIO_ART_KEY}"
+    URL https://github.com/gpuaudio/platform_headers/releases/download/v0.0.1/gpu_audio_client-v0.1.1_12.zip
     SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include/gpu_audio_client
 )
 FetchContent_MakeAvailable(gpu_audio_client)
